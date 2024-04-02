@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 0 206px;
+}
+
+.header, .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 0;
+}
+
+.header .img a, 
+footer .img a{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.header .img img,
+footer .img img{
+    max-width: 57px;
+    padding-right: .5em;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul li{
+    list-style: none;
+    padding-left: 7em;
+}
+
+@media(max-width:1400px){
+    .header ul li{
+        list-style: none;
+        padding-left: 0em;
+    }
+
+}
+
+.header a,
+.footer a,
+.footer p{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 2rem;
+}
+
+#menu li a:hover{
+    background: rgba(0,0,0,0.05);
+}
+
+.header span,
+.footer span{
+    font-size: 35px;
+    font-weight: bold;
+}
+/* header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background:  #E5E5E5;
+    z-index: 1000;
+} */
+
+footer{
+    background: #1A1A1A;
+    height: 100%;
+}
+
+.footer span, 
+.footer p{
+    color: #fff;
+}
+
+
+#notify{
+    margin-top: 5.5em
+}
+
+.barrel{
+    display: flex;
+    /* align-items: center; */
+}
+
+.barrel img{
+    width: 50%;
+    height: auto;
+    max-height: 842.68px;
+    max-width: 1000px;
+}
+
+
+.notification{
+    width: 37%;
+    padding-right: 100px;
+}
+
+.notification h1{
+    margin-top: 1em;
+    font-size: 3.3vw;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 78px;
+    margin-bottom: .7em;
+    color: #1A1A1A;
+}
+
+.notification p{
+    font-size: 1.5vw;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 43px;
+    margin-bottom: .7em;
+    color: #595959;
+}
+
+.notification button{
+    font-size: 1.25vw;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 30px;
+    color: #0074FF;
+    padding: 22px 36px 21px 36px;
+    cursor: pointer;
+}
+
+.location, .info, .seg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+}
+
+.location h2, .info h2, .seg h2{
+    font-size: 3vw;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 59px;
+    margin-bottom: 2em;
+    color: #1A1A1A;
+}
+
+.location p, .info p, .seg p{
+    font-size: 1.5vw;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 44px;
+    margin-bottom: 2.2em;
+    padding: 0 138px;
+    color: 
+    #595959;
+}
+
+.mapapouter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline{
+    margin-top: 3em;
+    height: 3px;
+    background: black;
+    width: 316px;
+}
+
+.info, .seg{
+    margin-top: 14.5em;
+}
+
+.cards{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blueCard{
+    background: #0074FF;
+    color: #fff;
+    border: solid 1px #0074FF;
+    margin: 7.5px 7.5px;
+    width: 309px;
+    height: auto;
+    min-height: 470px;
+}
+
+.blueCard h3{
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 44px;
+    padding: 105px 46px 70px;
+}
+
+.blueCard ul{
+    padding-left: 16px;
+}
+.blueCardText{
+    padding: 0px 0px 53px 22px;
+    font-size: 14px;
+}
+
+.blueCard .number{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 13px;
+}
+
+
+.containerSegmento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 100px;
+    margin: 77px 100px 230px 100px;
+    
+}
+
+.cardSegmento{
+    display: flex;
+}
+
+.cardImg{
+    margin-right: 17px;
+}
+
+.cardImg .img{
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    min-width: 57px;
+    min-height: 109px;
+    align-items: center;
+    display: flex;
+}
+
+.cardSegmento .text{
+    padding-top: 109px;
+}
+
+
+.cardSegmento .text h3{
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 30px;
+    color: black;
+}
+
+.cardSegmento .text p{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 21px;
+    color: #595959;
+    padding-top: 15px;
+}
+
+.circle1{
+    width: 673px;
+    height: 673px;
+    background: rgba(0, 116, 255, 0.2);
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    overflow-x: hidden;
+    margin-left: -202px;
+    z-index: -5;
+}
+
+.circle2{
+    width: 673px;
+    height: 673px;
+    border: 5px solid #0074FF;
+    position: absolute;
+    border-radius: 50%;
+    right: 0px;
+    overflow-x: hidden;
+    margin-right: -178px;
+    z-index: -5;
+}
+
+#btnMenu{
+    display: none;
+}
+@media(max-width:1100px){
+    .containerSegmento{
+        grid-template-columns: 1fr 1fr;
+        margin: 77px 30px 230px 30px;   
+    }
+    .notification h1{
+        font-size: 9vw;
+    }
+    .notification p, .location p, .info p, .seg p{
+        font-size: 4vw;
+    }
+    .notification button{
+        font-size: 3vw;
+    }
+    .location h2, .info h2, .seg h2{
+        font-size: 8vw;
+    }
+
+}
+
+@media(max-width:1050px){
+    .barrel{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column
+    }
+    .barrel img{
+        width: 100%;
+        height: auto;
+        max-height: 842.68px;
+        max-width: 1000px;
+    }
+    .notification{
+        width: 50%;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 917px){
+    #menu{
+        display: block;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 170px;
+        right: 0px;
+        z-index: 100;
+        transition: .2s;
+        overflow-y: hidden;
+        background: #333;
+        padding-bottom: 1em;
+    }
+    #menu li{ 
+        padding: 0;
+    }
+    #menu a{
+        border-bottom: 1px solid #333;
+        display: block;
+        padding: .7rem;
+        margin: 0rem 3rem 0rem 2.5rem;
+        
+    }
+    .container{
+        margin: 0 30px;
+    }
+
+    #nav.active #menu{
+        display: block;
+    }
+
+    #btnMenu{
+        color:#1A1A1A;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+@media (max-width: 800px){
+    .containerSegmento{
+        grid-template-columns: 1fr;
+        margin: 77px 100px 230px 100px;
+        
+    }
+    .underline{
+        max-width: 50%;
+    }
+    .notification p, .location p, .info p, .seg p{
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .containerSegmento{
+        grid-template-columns: 1fr;
+        margin: 77px 10px 230px 10px;
+        
+    }
+    .footer{
+        display: block;
+    }
+    .notification button{
+        padding: 10px;
+    }
+    .notification{
+        width: 60%;
+        padding-right: 50px;
+    }
+    .header .img a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.maps{
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.mapouter iframe{
+    min-width: 600px; 
+    min-height: 500px;
+}
+
+
+.maps::-webkit-scrollbar { 
+	display: none;
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: #333;
+    }
+
+    header, .header #menu{
+        background-color: black;
+    }
+    .header span, .header a, .header #btnMenu{
+        color: #fff;
+    }
+    #menu a{
+        border-color: #E5E5E5;
+    }
+    .notification h1{
+        color: #fff
+    }
+    .notification p, .location p, .info p, .seg p{
+        color: aliceblue;
+    }
+    .notification button{
+        color: #0074FF;
+        background-color: #1A1A1A;
+        border-color: aliceblue;
+    }
+    .notification button:hover{
+        background: rgba(0,0,0,0.05);
+    }
+    .location h2, .info h2, .seg h2{
+        color: #fff;
+    }
+
+    .underline{
+        background-color: #fff;
+    }
+    .circle1{
+        background-color:  #0074FF;
+    }
+
+    .cardImg .img{
+        filter: invert(100%)
+    }
+
+    .cardSegmento .text h3{
+        color: #fff;
+        font-weight: bold;
+    }
+    .cardSegmento .text p{
+        color: aliceblue;
+    }
+}
