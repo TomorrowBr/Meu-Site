@@ -529,3 +529,55 @@ footer{
         color: aliceblue;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px; /* Reduz a margem nas laterais para telas menores */
+    }
+
+    .header ul {
+        flex-direction: column; /* Altera a direção da lista para empilhada */
+        align-items: center; /* Alinha os itens centralmente */
+    }
+
+    .header ul li {
+        margin: 10px 0; /* Adapta a margem dos itens da lista */
+    }
+
+    .notification,
+    .location,
+    .info,
+    .seg {
+        padding: 0 10px; /* Adapta o preenchimento nos blocos de conteúdo */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .blueCard,
+    .cardSegmento {
+        width: 100%; /* Define a largura dos cartões para ocupar toda a largura disponível */
+        margin-bottom: 20px; /* Adapta a margem inferior dos cartões */
+    }
+
+    .maps {
+        max-width: 100%; /* Garante que o mapa se ajuste à largura do contêiner */
+    }
+
+    .underline {
+        width: 80%; /* Adapta a largura da linha de sublinhado */
+    }
+}
+
+@media (max-width: 500px) {
+    .notification button {
+        padding: 10px; /* Adapta o preenchimento do botão */
+    }
+
+    .maps {
+        max-width: 100%; /* Garante que o mapa se ajuste à largura do contêiner */
+    }
+
+    .underline {
+        width: 80%; /* Adapta a largura da linha de sublinhado */
+    }
+}
+
